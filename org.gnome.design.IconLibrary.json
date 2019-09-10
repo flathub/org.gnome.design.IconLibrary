@@ -16,7 +16,7 @@
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf",
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--own-name=org.gnome.design.IconLibraryDevel.SearchProvider"
+        "--own-name=org.gnome.design.IconLibrary.SearchProvider"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin",
