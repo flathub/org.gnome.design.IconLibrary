@@ -48,8 +48,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/3ec4b5d1bdb66385206536240a7787ee/icon-library-0.0.3.tar.xz",
-                "sha256": "ac28d4cbc14f3c54e6582fda69f7de1c6d542717daf688575467bc1e9d3c2814"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/9fcee27ceafedc9818b762b4a85fe504/icon-library-0.0.4.tar.xz",
+                "sha256": "16c4566563bb399ae18b762a910c3d56bf3f746a267727b88749789946c4d3c5"
             }]
         }
     ]
