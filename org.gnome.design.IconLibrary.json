@@ -9,7 +9,7 @@
     "command": "icon-library",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
         "--own-name=org.gnome.design.IconLibrary.SearchProvider"
@@ -39,8 +39,8 @@
             "sources": [{
                 "type": "git",
                 "url": "https://source.puri.sm/Librem5/libhandy.git",
-                "tag": "v0.0.10",
-                "commit": "2d777677352d037b6f5cc24d9c1c8d9a74ac0ded"
+                "tag": "v0.0.13",
+                "commit": "7a193d7692c9c76a1a94f17c4d30b585f77d177c"
             }]
         },
         {
@@ -48,8 +48,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/9fcee27ceafedc9818b762b4a85fe504/icon-library-0.0.4.tar.xz",
-                "sha256": "16c4566563bb399ae18b762a910c3d56bf3f746a267727b88749789946c4d3c5"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/13003417a03718771af8700c8cc2fca8/icon-library-0.0.5.tar.xz",
+                "sha256": "1a8790c95ef03ebf887ac1d6ba540e20d3ad64320cb95c0cf83a497ed7cc5846"
             }]
         }
     ]
