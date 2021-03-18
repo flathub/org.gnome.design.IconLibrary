@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.design.IconLibrary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -38,9 +38,8 @@
             ],
             "sources": [{
                 "type": "git",
-                "url": "https://source.puri.sm/Librem5/libhandy.git",
-                "tag": "v0.0.13",
-                "commit": "7a193d7692c9c76a1a94f17c4d30b585f77d177c"
+                "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
+                "branch": "1.2.0"
             }]
         },
         {
@@ -48,8 +47,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/b9900b5d6f713770ebd87144c0c932ef/icon-library-0.0.6.tar.xz",
-                "sha256": "dd178db09a9b8a078e2691b117adf65a1c5f452f96b5aa7e3d2286a9b294aa04"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/0f4ffcd3d378bf278d3599789f717a7e/icon-library-0.0.7.tar.xz",
+                "sha256": "45f33957ed066012e32ec62a24e0a5d81b5c80c7d6293929b2431a5611c1031a"
             }]
         }
     ]
