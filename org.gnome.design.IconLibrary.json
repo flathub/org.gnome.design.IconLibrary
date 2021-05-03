@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.design.IconLibrary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -15,40 +15,16 @@
         "--own-name=org.gnome.design.IconLibrary.SearchProvider"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin",
-        "env": {
-            "CARGO_HOME": "/run/build/icon-library/cargo"
-        }
+        "append-path": "/usr/lib/sdk/rust-stable/bin"
     },
-    "modules": [{
-            "name": "libhandy",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dintrospection=disabled",
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false",
-                "-Dglade_catalog=disabled"
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig",
-                "/bin"
-            ],
-            "sources": [{
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
-                "branch": "1.2.0"
-            }]
-        },
+    "modules": [
         {
             "name": "icon-library",
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/0f4ffcd3d378bf278d3599789f717a7e/icon-library-0.0.7.tar.xz",
-                "sha256": "45f33957ed066012e32ec62a24e0a5d81b5c80c7d6293929b2431a5611c1031a"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/4e9d3c1da9bb2fbac2b8b249560eac0d/icon-library-0.0.8.tar.xz",
+                "sha256": "300d2b60bc0efb3db884e44b3df85e6addb8b34c79b408f36f05cb73311e1f78"
             }]
         }
     ]
