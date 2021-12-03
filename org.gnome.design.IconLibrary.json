@@ -46,7 +46,7 @@
             "sources" : [{
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                "tag": "1.0.0.alpha.4"
+                "commit": "60b274cefee078231d5c47547f6ac159db809d27"
             }],
             "modules": [
                 {
