@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.design.IconLibrary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -18,13 +18,57 @@
         "append-path": "/usr/lib/sdk/rust-stable/bin"
     },
     "modules": [
+         {
+            "name" : "libadwaita",
+            "buildsystem" : "meson",
+            "config-opts": [
+                "-Dintrospection=disabled",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false",
+                "-Dvapi=false"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ],
+            "sources" : [{
+                "type": "git",
+                "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                "tag": "1.0.0.alpha.4"
+            }],
+            "modules": [
+                {
+                    "name" : "libsass",
+                    "buildsystem" : "meson",
+                    "cleanup": ["*"],
+                    "sources" : [{
+                        "type" : "git",
+                        "url" : "https://github.com/lazka/libsass.git",
+                        "branch" : "meson",
+                        "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
+                    }]
+                },
+                {
+                    "name" : "sassc",
+                    "buildsystem" : "meson",
+                    "cleanup": ["*"],
+                    "sources" : [{
+                        "type" : "git",
+                        "url" : "https://github.com/lazka/sassc.git",
+                        "branch" : "meson",
+                        "commit": "82803377c33247265d779af034eceb5949e78354"
+                    }]
+                }
+            ]
+        },
         {
             "name": "icon-library",
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/fdf890706e0eef2458a5285e3bf65dd5/icon-library-0.0.8.tar.xz",
-                "sha256": "26e1b3d8e05a474eb4e178de7f2b839827fcc2e8c85982ef0b12d5b74c590720"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/6673a735884eb98bafc0d0ee95a3535d/icon-library-0.0.9.tar.xz",
+                "sha256": "513eb8eb8f8c94a6f852ccdd9c516cc06f89a3d98642c21c2281f070b3d970b1"
             }]
         }
     ]
