@@ -18,6 +18,17 @@
         "append-path": "/usr/lib/sdk/rust-stable/bin"
     },
     "modules": [
+        {
+            "name": "gtksourceview",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtksourceview",
+                    "tag": "5.2.0"
+                }
+            ]
+        },
          {
             "name" : "libadwaita",
             "buildsystem" : "meson",
