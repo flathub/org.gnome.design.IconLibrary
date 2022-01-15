@@ -23,15 +23,66 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gtksourceview",
-                    "tag": "5.2.0"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtksourceview/5.3/gtksourceview-5.3.2.tar.xz",
+                    "sha256": "af7736e2ee3cdbc1013090e8caf35fb89d65cf41c9c399cac5d8992d955ded30"
                 }
             ]
         },
-         {
-            "name" : "libadwaita",
+        {
+            "name" : "libsass",
             "buildsystem" : "meson",
+            "cleanup": ["*"],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/libsass.git",
+                    "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
+                }
+            ]
+        },
+        {
+            "name" : "sassc",
+            "buildsystem" : "meson",
+            "cleanup": ["*"],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/sassc.git",
+                    "commit": "82803377c33247265d779af034eceb5949e78354"
+                }
+            ]
+        },
+        {
+            "name": "pango",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.3.tar.xz",
+                    "sha256": "4add05edf51c1fb375a1ccde7498914120e23cb280dd7395b1aeb441f1838a4c"
+                }
+            ]
+        },
+        {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts" : [
+                    "-Dbuild-examples=false",
+                    "-Dintrospection=disabled",
+                    "-Dbuild-tests=false"
+            ],
+            "sources": [
+                {
+                  "type": "archive",
+                  "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.0.tar.xz",
+                  "sha256" : "782d5951fbfd585fc9ec76c09d07e28e6014c72db001fb567fff217fb96e4d8c"
+                }
+            ]
+        },
+        {
+            "name": "libadwaita",
+            "buildsystem": "meson",
             "config-opts": [
                 "-Dintrospection=disabled",
                 "-Dgtk_doc=false",
@@ -39,37 +90,11 @@
                 "-Dexamples=false",
                 "-Dvapi=false"
             ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
-            ],
-            "sources" : [{
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                "commit": "60b274cefee078231d5c47547f6ac159db809d27"
-            }],
-            "modules": [
+            "sources": [
                 {
-                    "name" : "libsass",
-                    "buildsystem" : "meson",
-                    "cleanup": ["*"],
-                    "sources" : [{
-                        "type" : "git",
-                        "url" : "https://github.com/lazka/libsass.git",
-                        "branch" : "meson",
-                        "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                    }]
-                },
-                {
-                    "name" : "sassc",
-                    "buildsystem" : "meson",
-                    "cleanup": ["*"],
-                    "sources" : [{
-                        "type" : "git",
-                        "url" : "https://github.com/lazka/sassc.git",
-                        "branch" : "meson",
-                        "commit": "82803377c33247265d779af034eceb5949e78354"
-                    }]
+                  "type": "archive",
+                  "url": "https://download.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.1.tar.xz",
+                  "sha256" : "bb49cf5a09d2e8bc144946c2c3272aecd611667fd027f3808b95d7101ed473d6"
                 }
             ]
         },
@@ -78,8 +103,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/6673a735884eb98bafc0d0ee95a3535d/icon-library-0.0.9.tar.xz",
-                "sha256": "513eb8eb8f8c94a6f852ccdd9c516cc06f89a3d98642c21c2281f070b3d970b1"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/cbca192a605c87b4aae0f38c0a1255b7/icon-library-0.0.10.tar.xz",
+                "sha256": "a42f03569f4918d7e48abcb62b2bc98ba5d869a1f8e013140d56db56766e9161"
             }]
         }
     ]
