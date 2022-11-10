@@ -11,8 +11,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=dri",
-        "--own-name=org.gnome.design.IconLibrary.SearchProvider"
+        "--device=dri"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
@@ -23,8 +22,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/8f50442be6768d71a831e43422ba871a/icon-library-0.0.12.tar.xz",
-                "sha256": "cfb8ee808c2e8e1ab380707557cc5f00a0677e620f6a867bad201a20af2b3962"
+                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/2dda9ae9cc1dc3b40c33b9fd4a52124d/icon-library-0.0.14.tar.xz",
+                "sha256": "be4edf5e1262c61147bf6ca6124f67737d2055a7416a0a962726124ec9cb3394"
             }]
         }
     ]
