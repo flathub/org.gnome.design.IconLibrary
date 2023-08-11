@@ -40,6 +40,17 @@
             ],
             "modules": [
                 {
+                    "name": "glib",
+                    "buildsystem": "meson",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://gitlab.gnome.org/GNOME/glib",
+                            "tag": "2.77.1"
+                        }
+                    ]
+                },
+                {
                     "name": "appstream",
                     "buildsystem": "meson",
                     "config-opts": [
