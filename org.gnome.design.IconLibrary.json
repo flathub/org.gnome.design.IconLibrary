@@ -51,6 +51,17 @@
                     ]
                 },
                 {
+                    "name": "pango",
+                    "buildsystem": "meson",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://gitlab.gnome.org/GNOME/pango",
+                            "commit": "a6b4b776f351070a88c67cd88d773f0963aeb914"
+                        }
+                    ]
+                },
+                {
                     "name": "appstream",
                     "buildsystem": "meson",
                     "config-opts": [
