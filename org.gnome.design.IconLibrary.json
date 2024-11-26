@@ -22,8 +22,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://gitlab.gnome.org/World/design/icon-library/uploads/7725604ce39be278abe7c47288085919/icon-library-0.0.19.tar.xz",
-                "sha256": "9d619362849ad3f7f19c3d0c6f6d77d8b91e075a1afe08ffa085c16c8f850f0f"
+                "url": "https://gitlab.gnome.org/-/project/8035/uploads/81279e73c43bf16360e03d851a74f153/icon-library-0.0.20.tar.xz",
+                "sha256": "ad35feb248151a79913f84e2f265e6cd98e81734975d9f5d0ff2515cead4e571"
             }]
         }
     ]
