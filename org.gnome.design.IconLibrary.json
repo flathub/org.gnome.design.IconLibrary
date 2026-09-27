@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.design.IconLibrary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -23,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.gnome.org/World/design/icon-library/-/releases/0.0.22/downloads/icon-library-0.0.22.tar.xz",
-                    "sha256": "d98879d131fe3071a95b595965727415b3fa5703d39ae7ac7e101935222dd1bc",
+                    "url": "https://gitlab.gnome.org/World/design/icon-library/-/releases/0.0.23/downloads/icon-library-0.0.23.tar.xz",
+                    "sha256": "7d8f2557b842bbdbf806ea908ee9e4dde06483fea7b0f73f9bfe649a0164cd58",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/8035/releases/",
